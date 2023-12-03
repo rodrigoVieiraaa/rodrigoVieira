@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --color1: #1e5155;
+  --color2: #1c4443;
+  --color3: #b7baaf;
+  --color4: #1c2e4e;
+  --color5: #000324;
+}
+
+body {
+  background-color: var(--color5);
+  color: var(--color3);
+
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+#logo {
+  float: left;
+  transform: translate(-50%, -50%);
+
+  margin-left: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#menu {
+  list-style: none;
+  text-align: center;
+}
+
+#botaoContato {
+  float: right;
+
+  border-radius: 30px;
+
+  background-color: var(--color3);
+  color: var(--color5);
+  /* box-shadow: 0px 0px 5px #b7baaf45; */
+  /* color: var(--color3); */
+
+  padding: 10px 25px;
+}
+
+.botaoMenu {
+  display: inline-block;
+
+  font-weight: 500;
+
+  padding: 10px;
+}
