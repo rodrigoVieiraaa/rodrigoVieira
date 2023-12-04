@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root {
   --color1: #1e5155;
@@ -8,27 +8,44 @@
   --color5: #000324;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--color5);
   color: var(--color3);
 
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+
+  overflow: hidden;
+}
+
+main {
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 #logo {
-  float: left;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 5px;
+  left: 10px;
 
-  margin-left: 20px;
-
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 #menu {
   list-style: none;
   text-align: center;
+  justify-content: center;
 }
 
 #botaoContato {
@@ -38,10 +55,37 @@ body {
 
   background-color: var(--color3);
   color: var(--color5);
-  /* box-shadow: 0px 0px 5px #b7baaf45; */
-  /* color: var(--color3); */
+  /* box-shadow: 0px 0px 5px #b7baaf45;
+  color: var(--color3); */
 
   padding: 10px 25px;
+  margin: 5px 10px 0 0;
+}
+
+#nome {
+  font-weight: 400;
+  font-size: 4em;
+}
+
+#sobrenome {
+  font-size: 8em;
+}
+
+.background {
+  position: relative;
+}
+
+.backgroundImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+}
+
+.content {
+  position: relative;
 }
 
 .botaoMenu {
@@ -49,5 +93,44 @@ body {
 
   font-weight: 500;
 
-  padding: 10px;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  padding: 100px;
+}
+
+.titulo {
+  text-transform: uppercase;
+
+  margin: 0 0 -15px 0;
+  padding: 0;
+}
+
+.subtitulo {
+  margin: 5px 0 70px 0;
+  letter-spacing: 1.65em;
+
+  text-transform: none;
+}
+
+.fotoperfil {
+  float: right;
+  transform: translate(-30%, -90%);
+
+  width: 17em;
+  border-radius: 50%;
+}
+
+.botao {
+  margin: 0 20px 0 0;
+  padding: 15px 60px;
+
+  color: var(--color3);
+  font-size: 1.25em;
+
+  border: 1px solid var(--color3);
+  border-radius: 20px;
 }
